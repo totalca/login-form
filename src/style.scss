@@ -1,0 +1,67 @@
+@import '_component/config/colour';
+
+html, body {
+  height: 100%;
+  height: 100%;
+}
+
+body {
+  background: $color-alto;
+  font-family: Courier New, sans-serif;
+}
+
+#login__form {
+  width: 100%;
+  height: 100%;
+  background-image: url('asset/image/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login__box {
+  width: 380px;
+  height: 370px;
+  color: $color-white;
+  position: relative;
+  padding: 15px;
+  top: 50%;
+  margin: auto;
+  margin-top: -185px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.login__box form {
+  margin-bottom: 20px;
+}
+
+.login__box input {
+  margin-top: 20px;
+}
+
+.login__box input[type='submit'] {
+  width: 100%;
+}
+
+.login__logo {
+  width: 100;
+  padding: 0 10px;
+}
+
+.login__logo img {
+  width: 100%;
+  height: auto;
+  margin: 25px 0 10px;
+}
+
+.btn__action {
+  color: $color-white;
+}
+
+.btn__action:hover, .btn__action:focus, .btn__action:active {
+  color: $color-white;
+  background: $color-web-orange;
+}
+
+.btn__action:active:focus {
+  background: $color-web-orange;
+}
