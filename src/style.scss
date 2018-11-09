@@ -90,7 +90,7 @@ p {
 .login__logo img {
   width: 100%;
   height: auto;
-  margin: 25px 0 10px;
+  margin: -10px 0 5px;
 }
 
 .btn:focus, 
@@ -121,7 +121,7 @@ p {
 .form__action:focus,
 .form__action:visited {
   color: $color-white;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .form__box {
@@ -138,4 +138,19 @@ p {
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+// Responsive Design
+
+@media (min-width: 481px) and (max-width:767px) {
+  .login__box {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1px) and (max-width:480px) {
+  .login__box {
+    width: 310px !important;
+    margin-top: -225px !important; 
+  }
 }
