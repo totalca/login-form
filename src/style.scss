@@ -1,8 +1,10 @@
 @import '_component/config/colour';
 
-html, body {
+html, 
+body {
+  width: 100%;
   height: 100%;
-  height: 100%;
+  margin: auto;
 }
 
 body {
@@ -10,10 +12,47 @@ body {
   font-family: Courier New, sans-serif;
 }
 
+a, 
+a:link, 
+a:visited, 
+a:focus {
+  color: $color-tundora;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0px 5px -15px 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  touch-action: manipulation;
+  user-select: none;
+  border-radius: 4px;
+
+}
+
+.logo__center {
+  text-align: center;
+}
+
 #login__form {
   width: 100%;
   height: 100%;
-  background-image: url('asset/image/bg.jpeg');
+  background-image: url('asset/image/background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -36,6 +75,7 @@ body {
 
 .login__box input {
   margin-top: 20px;
+  // padding: 0;
 }
 
 .login__box input[type='submit'] {
@@ -53,15 +93,49 @@ body {
   margin: 25px 0 10px;
 }
 
-.btn__action {
-  color: $color-white;
+.btn:focus, 
+.btn:active, 
+.btn:active:focus {
+  outline: none;
 }
 
-.btn__action:hover, .btn__action:focus, .btn__action:active {
+.btn__action {
   color: $color-white;
+  border: $color-web-orange;
   background: $color-web-orange;
+}
+
+.btn__action:hover, 
+.btn__action:focus, 
+.btn__action:active {
+  color: $color-white;
+  background: $color-web-orange-2;
 }
 
 .btn__action:active:focus {
   background: $color-web-orange;
+}
+
+.form__action, 
+.form__action:link, 
+.form__action:focus,
+.form__action:visited {
+  color: $color-white;
+  font-size: 14px;
+}
+
+.form__box {
+  display: block;
+  width: 99%;
+  height: 34px;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 5px 0 5px 5px;
+  color: $color-emperor;
+  background-color: $color-white;
+  background-image: none;
+  border: 1px $color-silver;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
